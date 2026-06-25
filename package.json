@@ -6,6 +6,10 @@
 	],
 	"scripts": {
 		"build": "turbo run build",
+		"build:api": "bun --filter @zws.im/api build",
+		"build:web": "bun --filter @zws.im/web build",
+		"start:api": "node ./apps/api/dist/main.js",
+		"start:web": "bun --filter @zws.im/web start",
 		"dev": "bun --parallel --workspaces dev",
 		"format": "prettier --check .",
 		"format:write": "bun run format --write",
